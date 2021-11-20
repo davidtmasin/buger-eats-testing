@@ -1,9 +1,9 @@
+/// <reference types="cypress" />
 // O describe é a definição de uma suite de teste
 describe('home page', () => {
   // O it é a definição de um caso de teste
-  it.only('app deve estar online', () => {
-    cy.viewport(1440, 900)
-    cy.visit('https://buger-eats.vercel.app/')
+  it('app deve estar online', () => {
+    cy.visit('/')
     cy.get('img').should('be.visible')
     cy.get('h1').should(
       'have.text',

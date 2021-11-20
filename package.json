@@ -4,11 +4,13 @@
   "description": "Projeto de testes de aceitação do APP BugerEats",
   "main": "index.js",
   "scripts": {
-    "test": "npx cypress open"
+    "test": "npx cypress open",
+    "smoke-test": "cypress run --spec cypress/integration"
   },
   "author": "David Teixeira de Masin",
   "license": "MIT",
   "devDependencies": {
-    "cypress": "^9.0.0"
+    "cypress": "^9.0.0",
+    "cypress-file-upload": "^5.0.8"
   }
 }
